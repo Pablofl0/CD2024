@@ -19,4 +19,13 @@ public class Persona {
         nombre = nom;
         apellido1 = apel;
     }
+    public void setdni(String newdni){
+        if(newdni.length() <= 8)
+            dni = newdni;
+        else
+            dni = null;
+    }
+    public String getnombre(){
+        return nombre;
+    }
 }
