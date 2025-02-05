@@ -1,11 +1,11 @@
-package ud03.javaManual;
+package com.pablo;
 
 public class Test {
     public static void main(String[] args) {
         Persona mengano;
 
         mengano = new Persona();
-        mengano.setdni("12345678G");
+        mengano.setDni("12345678G");
         
     }
 }

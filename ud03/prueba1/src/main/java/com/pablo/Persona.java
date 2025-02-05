@@ -1,6 +1,7 @@
-package ud03.javaManual;
+package com.pablo;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Persona {
     //Atributos
@@ -10,24 +11,28 @@ public class Persona {
     private String apellido2;
     private String correo;
     private Integer movil;
-    private Date fecNacimiento;
+    private LocalDate fecNacimiento;
     //Métodos
     public Persona(){
         
     }
     
-    public Persona(String dni, String nom, String apel1, String apel2, String correo, Integer movil, Date fecNac){
-        this.dni = dni;
-        this.nombre = nom;
-        this.apellido1 = apel1;
-        this.apellido2 = apel2;
-        this.correo = correo;
-        this.movil = movil;
-        this.fecNacimiento = fecNac;
-    }
+    
     public String getDni() {
         return dni;
     }
+    public Persona(String dni, String nombre, String apellido1, String apellido2, String correo, Integer movil,
+            LocalDate fecNacimiento) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
+        this.correo = correo;
+        this.movil = movil;
+        this.fecNacimiento = fecNacimiento;
+    }
+
+
     public void setDni(String dni) {
         this.dni = dni;
     }
@@ -61,10 +66,10 @@ public class Persona {
     public void setMovil(Integer movil) {
         this.movil = movil;
     }
-    public Date getFecNacimiento() {
+    public LocalDate getFecNacimiento() {
         return fecNacimiento;
     }
-    public void setFecNacimiento(Date fecNacimiento) {
+    public void setFecNacimiento(LocalDate fecNacimiento) {
         this.fecNacimiento = fecNacimiento;
     }
 
@@ -74,15 +79,6 @@ public class Persona {
                 + ", correo=" + correo + ", movil=" + movil + ", fecNacimiento=" + fecNacimiento + "]";
     }
 
-    public Persona(String dni, String nombre, String apellido1, String apellido2, String correo, Integer movil,
-            Date fecNacimiento) {
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.correo = correo;
-        this.movil = movil;
-        this.fecNacimiento = fecNacimiento;
-    }
+   
     
 }

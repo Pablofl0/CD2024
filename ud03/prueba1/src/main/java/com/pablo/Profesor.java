@@ -1,12 +1,13 @@
-package ud03.javaManual;
+package com.pablo;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Profesor extends Persona{
     String especialidad;
     String cuerpo;
     Boolean sustituto;
-    Date fecOposicion;
+    LocalDate fecOposicion;
     public Profesor(){
 
     }
@@ -28,10 +29,10 @@ public class Profesor extends Persona{
     public void setSustituto(Boolean sustituto) {
         this.sustituto = sustituto;
     }
-    public Date getFecOposicion() {
+    public LocalDate getFecOposicion() {
         return fecOposicion;
     }
-    public void setFecOposicion(Date fecOposicion) {
+    public void setFecOposicion(LocalDate fecOposicion) {
         this.fecOposicion = fecOposicion;
     }
     @Override
@@ -39,15 +40,10 @@ public class Profesor extends Persona{
         return "Profesor [especialidad=" + especialidad + ", cuerpo=" + cuerpo + ", sustituto=" + sustituto
                 + ", fecOposicion=" + fecOposicion + "]";
     }
-    public Profesor(String especialidad, String cuerpo, Boolean sustituto, Date fecOposicion) {
-        this.especialidad = especialidad;
-        this.cuerpo = cuerpo;
-        this.sustituto = sustituto;
-        this.fecOposicion = fecOposicion;
-    }
-    public Profesor(String dni, String nom, String apel1, String apel2, String correo, Integer movil, Date fecNac,
-            String especialidad, String cuerpo, Boolean sustituto, Date fecOposicion) {
-        super(dni, nom, apel1, apel2, correo, movil, fecNac);
+
+    public Profesor(String dni, String nombre, String apellido1, String apellido2, String correo, Integer movil,
+            LocalDate fecNacimiento, String especialidad, String cuerpo, Boolean sustituto, LocalDate fecOposicion) {
+        super(dni, nombre, apellido1, apellido2, correo, movil, fecNacimiento);
         this.especialidad = especialidad;
         this.cuerpo = cuerpo;
         this.sustituto = sustituto;

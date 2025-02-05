@@ -1,4 +1,4 @@
-package ud03.javaManual;
+package com.pablo;
 
 import java.util.Date;
 
@@ -16,18 +16,22 @@ public class Persona {
         
     }
     
-    public Persona(String dni, String nom, String apel1, String apel2, String correo, Integer movil, Date fecNac){
-        this.dni = dni;
-        this.nombre = nom;
-        this.apellido1 = apel1;
-        this.apellido2 = apel2;
-        this.correo = correo;
-        this.movil = movil;
-        this.fecNacimiento = fecNac;
-    }
+    
     public String getDni() {
         return dni;
     }
+    public Persona(String dni, String nombre, String apellido1, String apellido2, String correo, Integer movil,
+            Date fecNacimiento) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
+        this.correo = correo;
+        this.movil = movil;
+        this.fecNacimiento = fecNacimiento;
+    }
+
+
     public void setDni(String dni) {
         this.dni = dni;
     }
@@ -74,15 +78,6 @@ public class Persona {
                 + ", correo=" + correo + ", movil=" + movil + ", fecNacimiento=" + fecNacimiento + "]";
     }
 
-    public Persona(String dni, String nombre, String apellido1, String apellido2, String correo, Integer movil,
-            Date fecNacimiento) {
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.correo = correo;
-        this.movil = movil;
-        this.fecNacimiento = fecNacimiento;
-    }
+   
     
 }
