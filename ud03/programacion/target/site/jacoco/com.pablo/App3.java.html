@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App3.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">programacion</a> &gt; <a href="index.source.html" class="el_package">com.pablo</a> &gt; <span class="el_source">App3.java</span></div><h1>App3.java</h1><pre class="source lang-java linenums">package com.pablo;
+import java.util.Scanner;
+
+<span class="nc" id="L4">public class App3 {</span>
+    public static void main(String[] args) throws Exception {
+<span class="nc" id="L6">        Scanner scanner = new Scanner(System.in);</span>
+
+<span class="nc" id="L8">        int tablero[][] = new int[3][3];</span>
+        
+
+<span class="nc" id="L11">        boolean enjuego = true;</span>
+<span class="nc" id="L12">        boolean jugador = true;</span>
+        
+
+
+            while (true) {
+<span class="nc" id="L17">                boolean empate = true;</span>
+<span class="nc" id="L18">                System.out.println(&quot;   C1 C2 C3&quot;);</span>
+<span class="nc bnc" id="L19" title="All 2 branches missed.">                for (int i = 0; i &lt; tablero.length; i++) {</span>
+<span class="nc" id="L20">                    System.out.print(&quot;F&quot; + (i+1) + &quot; &quot;);</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">                    for (int j = 0; j &lt; tablero.length; j++) {</span>
+<span class="nc bnc" id="L22" title="All 2 branches missed.">                        if (tablero[j][i]==0) {</span>
+<span class="nc" id="L23">                            System.out.print(&quot;-  &quot;);</span>
+<span class="nc" id="L24">                            empate=false;</span>
+                        }
+<span class="nc bnc" id="L26" title="All 2 branches missed.">                        else if (tablero[j][i]==1) {</span>
+<span class="nc" id="L27">                            System.out.print(&quot;X  &quot;);</span>
+                        }
+<span class="nc bnc" id="L29" title="All 2 branches missed.">                        else if (tablero[j][i]==2) {</span>
+<span class="nc" id="L30">                            System.out.print(&quot;0  &quot;);</span>
+                        }
+                    }
+<span class="nc" id="L33">                    System.out.println();</span>
+                }
+
+<span class="nc bnc" id="L36" title="All 2 branches missed.">                if (empate) {</span>
+<span class="nc" id="L37">                    System.out.println(&quot;¡Empate!&quot;);</span>
+<span class="nc" id="L38">                    enjuego = false;</span>
+                }
+
+<span class="nc bnc" id="L41" title="All 2 branches missed.">                if (enjuego==false){</span>
+<span class="nc" id="L42">                    break;</span>
+                }
+
+<span class="nc bnc" id="L45" title="All 2 branches missed.">                if (jugador) {</span>
+<span class="nc" id="L46">                    int columna1 = scanner.nextInt();</span>
+<span class="nc" id="L47">                    int fila1 = scanner.nextInt();</span>
+<span class="nc bnc" id="L48" title="All 8 branches missed.">                    if (columna1&lt;1 || columna1&gt;3 || fila1&lt;0 || fila1&gt;3) {</span>
+<span class="nc" id="L49">                        System.out.println(&quot;Introduce una posición del tablero.&quot;);</span>
+<span class="nc" id="L50">                        continue;</span>
+                    }
+<span class="nc bnc" id="L52" title="All 2 branches missed.">                    else if (tablero[columna1-1][fila1-1]!=0){</span>
+<span class="nc" id="L53">                        System.out.println(&quot;Esa posición ya está ocupada.&quot;);</span>
+<span class="nc" id="L54">                        continue;</span>
+                    }
+<span class="nc" id="L56">                    tablero[columna1-1][fila1-1]=1;</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">                    jugador=!jugador;</span>
+<span class="nc" id="L58">                }</span>
+                else {
+<span class="nc" id="L60">                    int columna2 = scanner.nextInt();</span>
+<span class="nc" id="L61">                    int fila2 = scanner.nextInt();</span>
+<span class="nc bnc" id="L62" title="All 8 branches missed.">                    if (columna2&lt;1 || columna2&gt;3 || fila2&lt;0 || fila2&gt;3) {</span>
+<span class="nc" id="L63">                        System.out.println(&quot;Introduce una posición del tablero.&quot;);</span>
+<span class="nc" id="L64">                        continue;</span>
+                    }
+<span class="nc bnc" id="L66" title="All 2 branches missed.">                    else if (tablero[columna2-1][fila2-1]!=0){</span>
+<span class="nc" id="L67">                        System.out.println(&quot;Esa posición ya está ocupada.&quot;);</span>
+<span class="nc" id="L68">                        continue;</span>
+                    }
+<span class="nc" id="L70">                    tablero[columna2-1][fila2-1]=2;</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">                    jugador=!jugador;</span>
+                }
+    
+                while (true) {
+<span class="nc bnc" id="L75" title="All 2 branches missed.">                    for (int i = 0; i &lt; tablero.length; i++) {</span>
+<span class="nc" id="L76">                        int sumafila = 0;</span>
+<span class="nc bnc" id="L77" title="All 2 branches missed.">                        for (int j = 0; j &lt; tablero.length; j++) {</span>
+<span class="nc bnc" id="L78" title="All 2 branches missed.">                            if (tablero[j][i]==2){</span>
+<span class="nc" id="L79">                                sumafila+=-1;</span>
+                            }
+                            else{
+<span class="nc" id="L82">                                sumafila += tablero[j][i];</span>
+                            }
+<span class="nc bnc" id="L84" title="All 2 branches missed.">                            if (sumafila==3) {</span>
+<span class="nc" id="L85">                                System.out.println(&quot;Ganador jugador 1(X).&quot;);</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">                                enjuego=!enjuego;</span>
+<span class="nc" id="L87">                                break;</span>
+                            }
+<span class="nc bnc" id="L89" title="All 2 branches missed.">                            else if (sumafila==-3) {</span>
+<span class="nc" id="L90">                                System.out.println(&quot;Ganador jugador 2(0).&quot;);</span>
+<span class="nc bnc" id="L91" title="All 2 branches missed.">                                enjuego=!enjuego;</span>
+<span class="nc" id="L92">                                break;</span>
+                            }
+                        }
+                    }
+<span class="nc bnc" id="L96" title="All 2 branches missed.">                    for (int j = 0; j &lt; tablero.length; j++) {</span>
+<span class="nc" id="L97">                        int sumacol = 0;</span>
+<span class="nc bnc" id="L98" title="All 2 branches missed.">                        for (int i = 0; i &lt; tablero.length; i++) {</span>
+<span class="nc bnc" id="L99" title="All 2 branches missed.">                            if (tablero[j][i]==2){</span>
+<span class="nc" id="L100">                                sumacol+=-1;</span>
+                            }
+                            else{
+<span class="nc" id="L103">                                sumacol += tablero[j][i];</span>
+                            }
+<span class="nc bnc" id="L105" title="All 2 branches missed.">                            if (sumacol==3) {</span>
+<span class="nc" id="L106">                                System.out.println(&quot;Ganador jugador 1(X).&quot;);</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">                                enjuego=!enjuego;</span>
+<span class="nc" id="L108">                                break;</span>
+                            }
+<span class="nc bnc" id="L110" title="All 2 branches missed.">                            else if (sumacol==-3) {</span>
+<span class="nc" id="L111">                                System.out.println(&quot;Ganador jugador 2(0).&quot;);</span>
+<span class="nc bnc" id="L112" title="All 2 branches missed.">                                enjuego=!enjuego;</span>
+<span class="nc" id="L113">                                break;</span>
+                            }
+                        }
+                    }
+<span class="nc" id="L117">                    int i = 0;</span>
+<span class="nc" id="L118">                    int sumadiagonal = 0;</span>
+<span class="nc bnc" id="L119" title="All 2 branches missed.">                    while (i&lt;tablero.length){</span>
+<span class="nc bnc" id="L120" title="All 2 branches missed.">                        if (tablero[i][i]==2){</span>
+<span class="nc" id="L121">                            sumadiagonal+=-1;</span>
+                        }
+                        else{
+<span class="nc" id="L124">                            sumadiagonal += tablero[i][i];</span>
+                        }
+<span class="nc" id="L126">                        i++;</span>
+                    }
+<span class="nc bnc" id="L128" title="All 2 branches missed.">                    if (sumadiagonal==3) {</span>
+<span class="nc" id="L129">                        System.out.println(&quot;Ganador jugador 1(X).&quot;);</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">                        enjuego=!enjuego;</span>
+                    }
+<span class="nc bnc" id="L132" title="All 2 branches missed.">                    else if (sumadiagonal==-3) {</span>
+<span class="nc" id="L133">                        System.out.println(&quot;Ganador jugador 2(0).&quot;);</span>
+<span class="nc bnc" id="L134" title="All 2 branches missed.">                        enjuego=!enjuego;</span>
+                    }
+<span class="nc" id="L136">                    int a = 0;</span>
+<span class="nc" id="L137">                    int b = 2;</span>
+<span class="nc" id="L138">                    int sumadiagonal2 = 0;</span>
+<span class="nc bnc" id="L139" title="All 2 branches missed.">                    while (a&lt;tablero.length){</span>
+<span class="nc bnc" id="L140" title="All 2 branches missed.">                        if (tablero[b][a]==2){</span>
+<span class="nc" id="L141">                            sumadiagonal2+=-1;</span>
+                        }
+                        else{
+<span class="nc" id="L144">                            sumadiagonal2 += tablero[b][a];</span>
+                        }
+<span class="nc" id="L146">                        a++;</span>
+<span class="nc" id="L147">                        b--;</span>
+                    }
+<span class="nc bnc" id="L149" title="All 2 branches missed.">                    if (sumadiagonal2==3) {</span>
+<span class="nc" id="L150">                        System.out.println(&quot;Ganador jugador 1(X).&quot;);</span>
+<span class="nc bnc" id="L151" title="All 2 branches missed.">                        enjuego=!enjuego;</span>
+                    }
+<span class="nc bnc" id="L153" title="All 2 branches missed.">                    else if (sumadiagonal2==-3) {</span>
+<span class="nc" id="L154">                        System.out.println(&quot;Ganador jugador 2(0).&quot;);</span>
+<span class="nc bnc" id="L155" title="All 2 branches missed.">                        enjuego=!enjuego;</span>
+                    }
+                    break;
+                }
+
+
+                
+<span class="nc" id="L162">        }</span>
+<span class="nc" id="L163">    scanner.close();</span>
+<span class="nc" id="L164">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
