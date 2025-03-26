@@ -1,0 +1,47 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'PruebaDoc 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'PruebaDoc 1.0-SNAPSHOT API'
+Pablo
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/src/main/java = 1742976677696
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/copy.svg = 1742978567847
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/index-all.html = 1742978567840
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/help-doc.html = 1742978567845
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/search.js = 1742978567849
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/module-search-index.js = 1742978567826
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/search-page.js = 1742978567849
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/element-list = 1742978567796
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/stylesheet.css = 1742978567847
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/member-search-index.js = 1742978567831
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/package-search-index.js = 1742978567826
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/allpackages-index.html = 1742978567826
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/type-search-index.js = 1742978567831
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/search.html = 1742978567841
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/index.html = 1742978567842
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/tag-search-index.js = 1742978567831
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/link.svg = 1742978567848
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/allclasses-index.html = 1742978567824
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/script.js = 1742978567847
+/home/vagrant/Desktop/CD2024/ud04/PruebaDoc/target/reports/apidocs/overview-tree.html = 1742978567816
