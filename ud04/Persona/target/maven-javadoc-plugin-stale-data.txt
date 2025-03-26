@@ -1,0 +1,47 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Persona 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Persona 1.0-SNAPSHOT API'
+Pablo
+/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java = 1742981412748
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/copy.svg = 1742981522626
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/index-all.html = 1742981522618
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/help-doc.html = 1742981522624
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/search.js = 1742981522628
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/module-search-index.js = 1742981522611
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/search-page.js = 1742981522628
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/element-list = 1742981522586
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/stylesheet.css = 1742981522626
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/member-search-index.js = 1742981522612
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/package-search-index.js = 1742981522611
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/allpackages-index.html = 1742981522611
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/type-search-index.js = 1742981522611
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/search.html = 1742981522620
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/index.html = 1742981522621
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/tag-search-index.js = 1742981522612
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/link.svg = 1742981522627
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/allclasses-index.html = 1742981522609
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/script.js = 1742981522626
+/home/vagrant/Desktop/CD2024/ud04/Persona/target/reports/apidocs/overview-tree.html = 1742981522602
