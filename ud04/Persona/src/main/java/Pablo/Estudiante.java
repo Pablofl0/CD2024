@@ -1,10 +1,11 @@
 package Pablo;
 
+/*
+* Clase Estudiante con nombre, edad y calificación.
+*/
 public class Estudiante {
 
-    /*
-     * Clase Estudiante con nombre, edad y calificación.
-     */
+    
     private String nombre;/** Valor del nombre del estudiante.*/
     private int edad;/** Valor de la edad del estudiante.*/
     private double calificacion;/** Valor de la calificación del estudiante. */
@@ -69,21 +70,32 @@ public class Estudiante {
     }
 
     /**
-     * Método que devuelve 
-     * @return
+     * Devuelve si la calificación es mayor o igual a 5.
+     * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
      */
     public boolean aprobo() {
         return calificacion >= 5.0;
     }
 
+    /**
+     * Devuelve la edad dividida entre 12 (sin decimales).
+     * @return Edad entre 12 sin decimales.
+     */
     public int edadEscolar() {
         return edad / 12;
     }
 
+    /**
+     * Devuelve si la edad es mayor o igual a 18.
+     * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
+     */
     public boolean esUniversitario() {
         return edad >= 18;
     }
 
+    /**
+     * Muestra por pantalla los atributos del estudiante.
+     */
     public void imprimirInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
