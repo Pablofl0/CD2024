@@ -23,7 +23,7 @@ public class TestCirculo {
         assertEquals(2, circulo.obtenerY());
         assertEquals(3, circulo.obtenerRadio());
         circulo.establecerRadio(-1);
-        assertEquals(.1, circulo.obtenerRadio());
+        assertEquals(0, circulo.obtenerRadio());
     }
 
     @Test
