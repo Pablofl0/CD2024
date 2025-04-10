@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Estudiante.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Persona</a> &gt; <a href="index.source.html" class="el_package">pablo</a> &gt; <span class="el_source">Estudiante.java</span></div><h1>Estudiante.java</h1><pre class="source lang-java linenums">package pablo;
+
+/**
+ * Clase Estudiante con nombre, edad y calificación.
+ */
+public class Estudiante {
+    private static final int EDADESCOLAR = 12; /** Constante de la edad escolar. */
+    private static final int EDADMAYOR = 18; /** Constante de la edad de mayor edad. */
+    private static final int APROBADO = 5; /** Constante del aprobado. */
+    private String nombre; /** Valor del nombre del estudiante.*/
+    private int edad; /** Valor de la edad del estudiante.*/
+    private double calificacion; /** Valor de la calificación del estudiante. */
+
+    /**
+     * Constructor de la clase Estudiante.
+     * @param nombre Valor del nombre del estudiante.
+     * @param edad Valor de la edad del estudiante.
+     */
+<span class="fc" id="L19">    public Estudiante(String nombre, int edad) {</span>
+<span class="fc" id="L20">        this.nombre = nombre;</span>
+<span class="fc" id="L21">        this.edad = edad;</span>
+<span class="fc" id="L22">        this.calificacion = 0.0;</span>
+<span class="fc" id="L23">    }</span>
+
+    /**
+     * Establece el valor de la calificación del estudiante.
+     * @param calificacion Valor de la califación.
+     */
+    public void setCalificacion(double calificacion) {
+<span class="fc" id="L30">        this.calificacion = calificacion;</span>
+<span class="fc" id="L31">    }</span>
+
+    /**
+     * Devuelve el valor del nombre del estudiante.
+     * @return Valor del nombre del estudiante.
+     */
+    public String getNombre() {
+<span class="fc" id="L38">        return nombre;</span>
+    }
+
+    /**
+     * Establece el nombre del estudiante.
+     * @param nombre Valor del nombre del estudiante.
+     */
+    public void setNombre(String nombre) {
+<span class="fc" id="L46">        this.nombre = nombre;</span>
+<span class="fc" id="L47">    }</span>
+
+    /**
+     * Devuelve el valor de la edad del estudiante.
+     * @return Valor de la edad del estudiante.
+     */
+    public int getEdad() {
+<span class="fc" id="L54">        return edad;</span>
+    }
+
+    /**
+     * Establece la edad del estudiante.
+     * @param edad Valore de la edad del estudiante.
+     */
+    public void setEdad(int edad) {
+<span class="fc" id="L62">        this.edad = edad;</span>
+<span class="fc" id="L63">    }</span>
+
+    /**
+     * Devuelve el valor de la calificación del estudiante.
+     * @return Valor de la calificación del estudiante.
+     */
+    public double getCalificacion() {
+<span class="fc" id="L70">        return calificacion;</span>
+    }
+
+    /**
+     * Devuelve si la calificación es mayor o igual a 5.
+     * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
+     */
+    public boolean aprobo() {
+<span class="fc bfc" id="L78" title="All 2 branches covered.">        return calificacion &gt;= APROBADO;</span>
+    }
+
+    /**
+     * Devuelve la edad dividida entre 12 (sin decimales).
+     * @return Edad entre 12 sin decimales.
+     */
+    public int edadEscolar() {
+<span class="fc" id="L86">        return edad / EDADESCOLAR;</span>
+    }
+
+    /**
+     * Devuelve si la edad es mayor o igual a 18.
+     * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
+     */
+    public boolean esUniversitario() {
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        return edad &gt;= EDADMAYOR;</span>
+    }
+
+    /**
+     * Muestra por pantalla los atributos del estudiante.
+     */
+    public void imprimirInformacion() {
+<span class="fc" id="L101">        System.out.println(&quot;Nombre: &quot; + nombre);</span>
+<span class="fc" id="L102">        System.out.println(&quot;Edad: &quot; + edad);</span>
+<span class="fc" id="L103">        System.out.println(&quot;Calificación: &quot; + calificacion);</span>
+<span class="fc" id="L104">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,14 +1,15 @@
-package Pablo;
+package pablo;
 
-/*
-* Clase Estudiante con nombre, edad y calificación.
-*/
+/**
+ * Clase Estudiante con nombre, edad y calificación.
+ */
 public class Estudiante {
-
-    
-    private String nombre;/** Valor del nombre del estudiante.*/
-    private int edad;/** Valor de la edad del estudiante.*/
-    private double calificacion;/** Valor de la calificación del estudiante. */
+    private static final int EDADESCOLAR = 12; /** Constante de la edad escolar. */
+    private static final int EDADMAYOR = 18; /** Constante de la edad de mayor edad. */
+    private static final int APROBADO = 5; /** Constante del aprobado. */
+    private String nombre; /** Valor del nombre del estudiante.*/
+    private int edad; /** Valor de la edad del estudiante.*/
+    private double calificacion; /** Valor de la calificación del estudiante. */
 
     /**
      * Constructor de la clase Estudiante.
@@ -74,7 +75,7 @@ public class Estudiante {
      * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
      */
     public boolean aprobo() {
-        return calificacion >= 5.0;
+        return calificacion >= APROBADO;
     }
 
     /**
@@ -82,7 +83,7 @@ public class Estudiante {
      * @return Edad entre 12 sin decimales.
      */
     public int edadEscolar() {
-        return edad / 12;
+        return edad / EDADESCOLAR;
     }
 
     /**
@@ -90,7 +91,7 @@ public class Estudiante {
      * @return Valor true en caso afirmativo, valor false en caso no afirmativo.
      */
     public boolean esUniversitario() {
-        return edad >= 18;
+        return edad >= EDADMAYOR;
     }
 
     /**

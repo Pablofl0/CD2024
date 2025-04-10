@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Circulo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Persona</a> &gt; <a href="index.source.html" class="el_package">pablo</a> &gt; <span class="el_source">Circulo.java</span></div><h1>Circulo.java</h1><pre class="source lang-java linenums">package pablo;
+
+/**
+ * Clase Círculo capaz de crear objetos Círculo.
+ */
+public class Circulo {
+    private int x; /** Valor de la primera coordenada del punto central. */
+    private int y; /** Valor de la segunda coordenada del punto central. */
+    private double radio; /** Valor del radio del círculo. */
+
+    /**
+     * Creación de un Círculo.
+     * @param valorX Valor de la primera coordenada del punto central.
+     * @param valorY Valor de la segunda coordenada del punto central.
+     * @param valorRadio Valor del radio del círculo.
+     */
+<span class="fc" id="L17">    public Circulo(int valorX, int valorY, double valorRadio) {</span>
+<span class="fc" id="L18">        establecerX(valorX);</span>
+<span class="fc" id="L19">        establecerY(valorY);</span>
+<span class="fc" id="L20">        establecerRadio(valorRadio);</span>
+<span class="fc" id="L21">    }</span>
+
+    /**
+     * Establece el valor de la primera coordenada del punto central.
+     * @param valorX Valor de la primera coordenada del punto central.
+     */
+    public void establecerX(int valorX) {
+<span class="fc" id="L28">        x = valorX;</span>
+<span class="fc" id="L29">    }</span>
+
+    /**
+     * Devuleve el valor de la primera coordenada del punto central.
+     * @return Valor de la primera coordenada del punto central.
+     */
+    public int obtenerX() {
+<span class="fc" id="L36">        return x;</span>
+    }
+
+    /**
+     * Devuelve el valor de la segunda coordenada del punto central.
+     * @param valorY Valor de la segunda coordenada del punto central.
+     */
+    public void establecerY(int valorY) {
+<span class="fc" id="L44">        y = valorY;</span>
+<span class="fc" id="L45">    }</span>
+
+    /**
+     * Devuleve el valor de la segunda coordenada del punto central.
+     * @return Valor de la segunda coordenada del punto central.
+     */
+    public int obtenerY() {
+<span class="fc" id="L52">        return y;</span>
+    }
+
+    /**
+     * Establece el valor del radio.
+     * @param valorRadio Valor del radio del círculo.
+     */
+    public void establecerRadio(double valorRadio) {
+
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        radio = valorRadio &lt; 0.0 ? 0.0 : valorRadio;</span>
+<span class="fc" id="L62">    }</span>
+
+    /**
+     * Devuelve el valor del radio del círculo.
+     * @return Valor del radio del círculo.
+     */
+    public double obtenerRadio() {
+<span class="fc" id="L69">        return radio;</span>
+    }
+
+    /**
+     * Devuelve el valor del diámetro del círculo.
+     * @return Diámetro del círculo (doble del radio).
+     */
+    public double obtenerDiametro() {
+<span class="fc" id="L77">        return radio * 2;</span>
+    }
+
+    /**
+     * Devuelve el perímetro del círculo.
+     * @return Perímetro del círculo.
+     */
+    public double obtenerCircunferencia() {
+<span class="fc" id="L85">        return Math.PI * obtenerDiametro();</span>
+    }
+
+    /**
+     * Devuelve el área del círculo.
+     * @return Área del círculo.
+     */
+    public double obtenerArea() {
+<span class="fc" id="L93">        return Math.PI * radio * radio;</span>
+    }
+
+    /**
+     * Método tostring mostrando punto central y radio.
+     */
+    @Override
+    public String toString() {
+<span class="fc" id="L101">        return &quot;Centro = [&quot; + x + &quot;,&quot; + y + &quot;]; Radio = &quot; + radio;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

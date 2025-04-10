@@ -1,4 +1,5 @@
-package Pablo;
+package pablo;
+
 /**
  * Clase Círculo capaz de crear objetos Círculo.
  */
@@ -21,11 +22,10 @@ public class Circulo {
 
     /**
      * Establece el valor de la primera coordenada del punto central.
-     * 
      * @param valorX Valor de la primera coordenada del punto central.
      */
     public void establecerX(int valorX) {
-        x=valorX;
+        x = valorX;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Circulo {
      * @param valorY Valor de la segunda coordenada del punto central.
      */
     public void establecerY(int valorY) {
-        y=valorY;
+        y = valorY;
     }
 
     /**
@@ -54,12 +54,11 @@ public class Circulo {
 
     /**
      * Establece el valor del radio.
-     * 
      * @param valorRadio Valor del radio del círculo.
      */
     public void establecerRadio(double valorRadio) {
 
-        radio=(valorRadio < 0.0 ? 0.0 : valorRadio);
+        radio = valorRadio < 0.0 ? 0.0 : valorRadio;
     }
 
     /**
@@ -93,7 +92,7 @@ public class Circulo {
     public double obtenerArea() {
         return Math.PI * radio * radio;
     }
-    
+
     /**
      * Método tostring mostrando punto central y radio.
      */

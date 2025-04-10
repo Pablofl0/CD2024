@@ -1,10 +1,9 @@
-package Pablo;
+package pablo;
 
+/**
+ * Clase Persona con nombre y edad.
+ */
 public class Persona {
-
-    /**
-     * Clase Persona con nombre y edad.
-     */
     private String nombre; /** Valor del nombre de la persona. */
     private int edad; /** Valor de la edad de la persona. */
 
