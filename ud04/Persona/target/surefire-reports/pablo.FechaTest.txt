@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: pablo.TestCirculo
+Test set: pablo.FechaTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in pablo.TestCirculo
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in pablo.FechaTest
