@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
-<file name="/home/vagrant/Desktop/CD2024/ud04/Persona/src/test/java/pablo/FechaTest.java">
+<file name="C:\Clase\NOUNI\CD2024\ud04\Persona\src\main\java\pablo\Fecha.java">
+<error line="54" column="30" severity="error" message="&apos;12&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 </checkstyle>

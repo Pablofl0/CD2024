@@ -1,11 +1,4 @@
-#Wed Apr 23 10:02:51 CEST 2025
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java/pablo/Circulo.java=1744280980738
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java/pablo/Estudiante.java=1744280720916
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java/pablo/Fecha.java=1745394926702
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/main/java/pablo/Persona.java=1744280322360
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/test/java/pablo/FechaTest.java=1745395368867
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/test/java/pablo/TestCirculo.java=1744281246000
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/test/java/pablo/TestEstudiante.java=1744281525180
-/home/vagrant/Desktop/CD2024/ud04/Persona/src/test/java/pablo/TestPersona.java=1744281418466
-configuration*?=B3B174E3F1BB90170561F5348A417DFC56C6FCA2
-module-resource*?\:checkstyle/suppressions.xml=9A0719B7CA5C432547A8C6CF2BB1E2C423199743
+#Thu May 22 18:19:01 CEST 2025
+C\:\\Clase\\NOUNI\\CD2024\\ud04\\Persona\\src\\test\\java\\pablo\\FechaTest.java=1747924936068
+configuration*?=9D7DC3AD7567BE909E4B47DD45ACDFFA5A670DA4
+module-resource*?\:checkstyle/suppressions.xml=AC0D29FB4B2FE7DAE2CC1971728FF08B4A000F77
